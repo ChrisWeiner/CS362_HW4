@@ -14,5 +14,7 @@ class TestCaseAverage(unittest.TestCase):
         self.assertEqual(LA.listAverage([0,0,0,0,0]),0)
     def test5(self):
         self.assertEqual(LA.listAverage("[0,0,0,0,0]"),13)
+    def test6(self):
+        self.assertEqual(LA.listAverage(1),13)
 if __name__ == "__main__": #Using this line from the unittest lecture to display the number of failures in the test
     unittest.main(verbosity=2)
