@@ -8,13 +8,13 @@ class TestCaseVolume1(unittest.TestCase):
     def test1(self):
         self.assertEqual(CV.cubeVolume(1.0),1.0)
     def test2(self):
-        self.assertEqual(CV.cubeVolume(complex(5,3)),-1)
+        self.assertEqual(CV.cubeVolume(complex(5,3)),"X cannot be complex")
     def test3(self):
-        self.assertEqual(CV.cubeVolume(-1),-1)
+        self.assertEqual(CV.cubeVolume(-1),"X is less than zero")
     def test4(self):
         self.assertEqual(CV.cubeVolume(3),27)
     def test5(self):
-        self.assertEqual(CV.cubeVolume("test"),27)
+        self.assertEqual(CV.cubeVolume("test"),"Invalid type")
     def test6(self):
         self.assertEqual(CV.cubeVolume(2),8)
 
